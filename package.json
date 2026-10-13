@@ -1,0 +1,33 @@
+{
+  "name": "hex-to-rgb-api",
+  "version": "1.0.0",
+  "description": "A hex-to-RGB JavaScript library exposed through an Express REST API, with Jest unit tests and Supertest integration tests.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --verbose",
+    "test:unit": "jest tests/hexToRgb.test.js --verbose",
+    "test:api": "jest tests/api.test.js --verbose",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "hex",
+    "rgb",
+    "express",
+    "jest",
+    "supertest",
+    "integration-testing"
+  ],
+  "author": "Krishna Chaudhary Tharu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
